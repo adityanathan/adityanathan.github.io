@@ -84,7 +84,10 @@ a:hover {
     text-decoration: underline;
 } */
 
-.social{
-    /* align-content: center; */
-    background-color: black;
+.news-element {
+    display: flex;
+}
+.left {
+    margin-right: 15px;
+    width: 105px;
 }
