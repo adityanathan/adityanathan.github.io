@@ -1,0 +1,30 @@
+---
+title: Naive Set Theory (Paul Halmos)
+draft: true
+---
+- Axiom of Extension
+	- ***Axiom: Two sets are equal iff they have the same elements***
+	- A set is a mathematical object. We do not define it.
+	- Belonging ($\in$) is introduced to relate a set's elements to it
+	- Inclusion ($\subset$) is introduced to relate two sets
+	- Equality of sets is defined with $\in$ and alternatively with $\subset$
+- Axiom of Specification
+	- ***Axiom: To every set A and to every condition S(x) there corresponds a set B whose elements are exactly those elements x of A for which S(x) holds***
+	- This axiom talks about set manufacture - you create new sets out of old ones by specifying a subset of the old set
+	- Customary notation for specifying subsets: $B = \{x \in A: S(x)\}$
+		- Also called set-builder notation
+	- Nothing contains everything i.e there is no universal set
+		- Proof Sketch: Given an arbitrary set A, you can construct set $B = \{x \in A: x \notin x\}$. We can prove that $B \notin A$ and thus given an arbitrary set, there exists a set that it doesn't contain. Thus, there is no universe.
+		- The implication is that you cannot talk about an element of a set without defining the set. If you talk about an element, you have to say which set it belongs to since there isn't a universal set that you can default to
+		- This was called Russell's paradox when the existence of a universal set was taken for granted.
+- Let us assume there is a set
+	- Axiom of specification implies then that there is a set with no elements
+		- Let the assumed set be A. Then, $\{x \in A: x \neq x\}$ gives the empty set by axiom of specification
+		- The axiom of extension then says that the empty set is unique.
+- Axiom of Pairing
+	- The axiom of pairing gives us a new way to construct sets beside axiom of specification which only gives us the empty set.
+	- ***Axiom: For any two sets, there exists a set that they both belong to***
+	- If a is a set and b is a set, then $\exists A : a \in A \wedge b \in A$
+	- Combining this with the axiom of specification to get the set containing just a and b i.e. $\{x \in A: x = a \vee x = b\}$ which is denoted {a, b} and is unique as per axiom of extension.
+	- {a, b} is a *pair* (or rather, an *unordered pair*)
+	- If $a$ is a set, then $\{a, a\}$ is a set by the axiom of pairing and denoted $\{a\}$ which is called the singleton of $a$
