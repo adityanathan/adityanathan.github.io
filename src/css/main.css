@@ -1,10 +1,10 @@
 :root {
-    --size-sm: 0.5rem;
-    --size-md: 1rem;
-    --size-lg: 1.5rem;
-    --size-xl: 2rem;
-    --size-xxl: 3rem;
-    --size-xxxl: 4rem;
+    --size-sm: 8px;
+    --size-md: 16px;
+    --size-lg: 24px;
+    --size-xl: 32px;
+    --size-xxl: 48px;
+    --size-xxxl: 64px;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     font-size: 13px;
     font-family: Helvetica, sans-serif;
+    min-width: 800px;
 }
 
 nav {
@@ -29,7 +30,7 @@ main {
     width: 500px;
     line-height: 1.5;
     padding-top: var(--size-xl);
-    padding-left: 15rem;
+    padding-left: 240px;
     /* Text wrap stuff */
     text-wrap: pretty;
     word-break: normal;
@@ -44,6 +45,7 @@ main h2 {
 @media (max-width: 900px) {
     body {
         flex-direction: column;
+        min-width: auto;
     }
 
     main {
