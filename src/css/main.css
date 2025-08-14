@@ -49,9 +49,11 @@ main h2 {
     }
 
     main {
-        width: 500px;
+        width: auto;
+        max-width: 100%;
         padding-left: var(--size-md);
         padding-right: var(--size-md);
+        font-size: 13px;
     }
 
     nav {
